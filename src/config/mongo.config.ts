@@ -7,6 +7,6 @@ config();
 export const mongoConfig = async (
   configService: ConfigService,
 ): Promise<MongooseModuleOptions> => ({
-  uri: configService.get<string>('MONGODB_URI'),
+  uri: configService.getOrThrow<string>('MONGODB_URI'),
   dbName: configService.get<string>('MONGO_DB_NAME'),
 });

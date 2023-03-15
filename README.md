@@ -3,13 +3,12 @@ NestJS MongoDB submodule
 
 ### Required
 
-1. @nestjs
+1. @nestjs/mongoose
 2. @mongoose
 
 ### Add lib:
 ```yarn
-yarn add @nestjs/mongoose
-yarn add mongoose
+yarn add @nestjs/mongoose mongoose
 ```
 
 ### Remove this lib:
